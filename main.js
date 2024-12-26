@@ -165,6 +165,7 @@ class DeviceWatcher extends utils.Adapter {
 			tuya: this.config.tuyaDevices,
 			unifi: this.config.unifiDevices,
 			"unifi-network": this.config.unifiNetworkDevices,
+			"unifi-protect-nvr": this.config.unifiProtectNvrDevices,
 			viessmann: this.config.viessmannDevices,
 			wifilight: this.config.wifilightDevices,
 			wled: this.config.wledDevices,
@@ -228,6 +229,7 @@ class DeviceWatcher extends utils.Adapter {
 			tuya: this.config.tuyaMaxMinutes,
 			unifi: this.config.unifiMaxMinutes,
 			"unifi-network": this.config.unifiNetworkMaxMinutes,
+			"unifi-protect-nvr": this.config.unifiProtectNvrMaxMinutes,
 			viessmann: this.config.viessmannMaxMinutes,
 			wifilight: this.config.wifilightMaxMinutes,
 			wled: this.config.wledMaxMinutes,
@@ -1358,6 +1360,7 @@ class DeviceWatcher extends utils.Adapter {
 					case 'tradfri':
 					case 'unifi':
 					case 'unifi-network':
+					case 'unifi-protect-nvr':
 					case 'zigbee':
 					case 'zigbee2MQTT':
 						if (this.configMaxMinutes[adapterID] <= 0) {
@@ -1483,6 +1486,13 @@ class DeviceWatcher extends utils.Adapter {
 				break;
 			case 'ring':
 				if (deviceUpdateSelector !== 'Up to Date') {
+					isUpgradable = true;
+				} else {
+					isUpgradable = false;
+				}
+				break;
+			case 'unifi-protect-nvr':
+				if (deviceUpdateSelector === 'updateAvailable') {
 					isUpgradable = true;
 				} else {
 					isUpgradable = false;
