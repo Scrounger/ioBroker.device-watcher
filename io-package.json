@@ -121,8 +121,20 @@
 			"zh-cn": "设备看门狗",
 			"uk": "Сторожовий пес для пристроїв"
 		},
-		"authors": ["Christian Behrends <mail@christian-behrends.de>"],
-		"keywords": ["device", "instance", "watcher", "device-watcher", "instance-watcher", "battery", "rssi", "link-quality", "lists"],
+		"authors": [
+			"Christian Behrends <mail@christian-behrends.de>"
+		],
+		"keywords": [
+			"device",
+			"instance",
+			"watcher",
+			"device-watcher",
+			"instance-watcher",
+			"battery",
+			"rssi",
+			"link-quality",
+			"lists"
+		],
 		"licenseInformation": {
 			"license": "MIT",
 			"type": "free"
@@ -149,8 +161,12 @@
 		},
 		"messagebox": true,
 		"docs": {
-			"en": ["docs/en/README.md"],
-			"de": ["docs/de/README.md"]
+			"en": [
+				"docs/en/README.md"
+			],
+			"de": [
+				"docs/de/README.md"
+			]
 		},
 		"dependencies": [
 			{
@@ -166,7 +182,10 @@
 			{
 				"condition": {
 					"operand": "and",
-					"rules": ["oldVersion<2.5.0", "newVersion>=2.5.0"]
+					"rules": [
+						"oldVersion<2.5.0",
+						"newVersion>=2.5.0"
+					]
 				},
 				"title": {
 					"en": "Important notice!",
@@ -195,7 +214,10 @@
 					"zh-cn": "新版本2.5.x有新的清单目标结构。 你们必须删除这一例子的树,重新树立重建结构的榜样!"
 				},
 				"level": "warn",
-				"buttons": ["agree", "cancel"]
+				"buttons": [
+					"agree",
+					"cancel"
+				]
 			}
 		]
 	},
@@ -306,6 +328,8 @@
 		"tuyaMaxMinutes": 0,
 		"unifiDevices": false,
 		"unifiMaxMinutes": 0,
+		"unifiNetworkDevices": false,
+		"unifiNetworkMaxMinutes": 0,
 		"viessmannDevices": false,
 		"viessmannMaxMinutes": 0,
 		"wifilightDevices": false,
