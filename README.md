@@ -137,8 +137,9 @@ It's also counting them in the same categories. You can use the lists and states
   <tr>    
     <td>Zigbee2MQTT</td> 
     <td>Zwave</td>
-    <td></td>
+    <td>........</td>
   </tr>
+ 
 </table>
 
 A list with more information about the supported adapters can be found here: [in German](docs/de/listSupportAdapter.md) or [in English](docs/en/listSupportAdapter.md).</br>
@@ -192,12 +193,24 @@ This adapter would not have been possible without the great work of Christian Be
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### 2.12.5 (2025-08-04)
+- (arteck) fix translation
+- (arteck) fix htmllist output
 
-### **WORK IN PROGRESS**
+### 2.12.4 (2025-08-02)
+- (arteck) ignore zigbee2mqtt disabled devices
+- (arteck) fix proxmox
+- (arteck) add proxmox new structure request
 
+### 2.12.3 (2025-08-02)
+- (arteck) add XSense
+- (arteck) fix Sonoff Name
+- (arteck) Dependencies have been updated
+
+### 2.12.2 (2025-08-02)
 - (ciddi89) Fixed [#362](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/362): Ecovacs Deebot use connectionUptime dp as timeselector
 - (mcm1957) Dependencies have been updated
-  
+
 ### 2.12.1 (2024-05-09)
 
 -   (ciddi89) Added: [#341](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/341) Support for Zigbee battery_state datapoint
@@ -589,8 +602,8 @@ This adapter would not have been possible without the great work of Christian Be
 
 MIT License
 
-Copyright (c) 2024 iobroker-community-adapters <iobroker-community-adapters@gmx.de>
-Copyright (c) 2024 Christian Behrends <mail@christian-behrends.de>
+Copyright (c) 2025 iobroker-community-adapters <iobroker-community-adapters@gmx.de>
+Copyright (c) 2025 Christian Behrends <mail@christian-behrends.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
