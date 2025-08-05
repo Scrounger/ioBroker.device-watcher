@@ -169,6 +169,8 @@ class DeviceWatcher extends utils.Adapter {
 			tradfri: this.config.tradfriDevices,
 			tuya: this.config.tuyaDevices,
 			unifi: this.config.unifiDevices,
+			"unifi-network": this.config.unifiNetworkDevices,
+			"unifi-protect-nvr": this.config.unifiProtectNvrDevices,
 			viessmann: this.config.viessmannDevices,
 			wifilight: this.config.wifilightDevices,
 			wled: this.config.wledDevices,
@@ -232,6 +234,8 @@ class DeviceWatcher extends utils.Adapter {
 			tradfri: this.config.tradfriMaxMinutes,
 			tuya: this.config.tuyaMaxMinutes,
 			unifi: this.config.unifiMaxMinutes,
+			"unifi-network": this.config.unifiNetworkMaxMinutes,
+			"unifi-protect-nvr": this.config.unifiProtectNvrMaxMinutes,
 			viessmann: this.config.viessmannMaxMinutes,
 			wifilight: this.config.wifilightMaxMinutes,
 			wled: this.config.wledMaxMinutes,
@@ -845,8 +849,7 @@ class DeviceWatcher extends utils.Adapter {
 					}
 				} else {
 					if (typeof deviceBatteryState === 'string') {
-						if (deviceBatteryState === 'high' || deviceBatteryState === 'medium')
-						{
+						if (deviceBatteryState === 'high' || deviceBatteryState === 'medium') {
 							batteryHealth = 'ok';
 							isBatteryDevice = true;
 						}
@@ -896,7 +899,7 @@ class DeviceWatcher extends utils.Adapter {
 			}
 		} else if (typeof deviceBatteryState === 'number' && deviceBatteryState < this.config.minWarnBatterie) {
 			lowBatIndicator = true;
-		} else if  (typeof deviceBatteryState === 'string' && deviceBatteryState === 'low') {
+		} else if (typeof deviceBatteryState === 'string' && deviceBatteryState === 'low') {
 			lowBatIndicator = true;
 		}
 
@@ -1037,6 +1040,8 @@ class DeviceWatcher extends utils.Adapter {
 					case 'sonoff':
 					case 'tradfri':
 					case 'unifi':
+					case 'unifi-network':
+					case 'unifi-protect-nvr':
 					case 'zigbee':
 					case 'zigbee2MQTT':
 						if (this.configMaxMinutes[adapterID] <= 0) {
@@ -1130,6 +1135,13 @@ class DeviceWatcher extends utils.Adapter {
 				break;
 			case 'ring':
 				if (deviceUpdateSelector !== 'Up to Date') {
+					isUpgradable = true;
+				} else {
+					isUpgradable = false;
+				}
+				break;
+			case 'unifi-protect-nvr':
+				if (deviceUpdateSelector === 'updateAvailable') {
 					isUpgradable = true;
 				} else {
 					isUpgradable = false;
