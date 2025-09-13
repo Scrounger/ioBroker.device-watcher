@@ -1,8 +1,60 @@
 {
   "common": {
     "name": "device-watcher",
-    "version": "2.12.4",
+    "version": "2.13.1",
     "news": {
+      "2.13.1": {
+        "en": "Dependencies have been fixed",
+        "de": "Abhängigkeiten wurden behoben",
+        "ru": "Зависимости были установлены",
+        "pt": "Dependências foram fixadas",
+        "nl": "Afhankelijkheden zijn vastgesteld",
+        "fr": "Les dépendances ont été fixées",
+        "it": "Le dipendenze sono state risolte",
+        "es": "Las dependencias se han fijado",
+        "pl": "Zależności zostały ustalone",
+        "uk": "Залежності були закріплені",
+        "zh-cn": "依赖已固定"
+      },
+      "2.13.0": {
+        "en": "Adapter requires admin >= 7.6.17, js-controller >= 6.0.11 and node.js>= 20 now.\nMissing dependency of 'node-schedule' has been fixed.\nDependencies have been updated",
+        "de": "Adapter benötigt admin >= 7.6.17, js-controller >= 6.0.11 und node.js>= 20 jetzt.\nDie fehlende Abhängigkeit von 'node-schedule' wurde behoben.\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер требует администратора >= 7.6.17, js-контроллер >= 6.0.11 и node.js>= 20 сейчас.\nОтсутствующая зависимость от «списка узлов» была исправлена.\nЗависимости были обновлены",
+        "pt": "O adaptador requer admin >= 7.6.17, js-controlador >= 6.0.11 e nod.js>= 20 agora.\nA dependência de 'node-schedule' foi corrigida.\nAs dependências foram atualizadas",
+        "nl": "Voor adapter is admin < 7.6.17, js-controller > 6.0.11 en node.js> = 20 nodig.\nOntbrekende afhankelijkheid van 'node-schema' is vastgesteld.\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "Adaptateur nécessite admin >= 7.6.17, js-controller >= 6.0.11 et node.js>= 20 maintenant.\nLa dépendance manquante de 'node-schedule' a été corrigée.\nLes dépendances ont été actualisées",
+        "it": "Adattatore richiede admin >= 7.6.17, js-controller >= 6.0.11 e node.js>= 20 ora.\nLa carenza di \"node-schedule\" è stata fissata.\nLe dipendenze sono state aggiornate",
+        "es": "El adaptador requiere admin= 7.6.17, js-controller ≤ 6.0.11 y node.js confianza= 20 ahora.\nSe ha fijado la dependencia de \"node-schedule\".\nSe han actualizado las dependencias",
+        "pl": "Adapter wymaga admin > = 7.6.17, js- controller > = 6.0.11 i node.js > = 20 teraz.\nBrak zależności od 'node-schedule' został ustalony.\nZaktualizowano zależności",
+        "uk": "Адаптер вимагає адмін >= 7.6.17, js-controller >= 6.0.11 і node.js>= 20 тепер.\nВизначена залежність 'node-schedule'.\nЗалежність було оновлено",
+        "zh-cn": "适配器需要管理员QQ7.6.17,js控制器QQ6.0.11和节点JsX20现在.\n丢失的“ 节点时间表” 的依赖性已被确定 .\n依赖关系已更新"
+      },
+      "2.12.6": {
+        "en": "fix send message",
+        "de": "die nachricht senden",
+        "ru": "отправить сообщение",
+        "pt": "corrigir mensagem de envio",
+        "nl": "verzendbericht repareren",
+        "fr": "corriger le message d'envoi",
+        "it": "correzione messaggio di invio",
+        "es": "recibir el mensaje",
+        "pl": "naprawić wiadomość wysyłającą",
+        "uk": "фіксувати надсилання повідомлення",
+        "zh-cn": "修复发送消息"
+      },
+      "2.12.5": {
+        "en": "fix translation\nfix htmllist output",
+        "de": "bersetzung\nhtmllist ausgeben",
+        "ru": "перевод\nфиксировать выход htmll",
+        "pt": "corrigir tradução\ncorrigir saída htmllist",
+        "nl": "fix vertaling\nhtmllist uitvoer repareren",
+        "fr": "corriger la traduction\ncorriger la sortie htmllist",
+        "it": "correzione della traduzione\nfix htmllist output",
+        "es": "traducción\nfijar la salida htmllist",
+        "pl": "tłumaczenie\nfix htmllist output",
+        "uk": "фіксувати переклад\nвиправлення htmllist виведення",
+        "zh-cn": "固定翻译\n修正 htmllist 输出"
+      },
       "2.12.4": {
         "en": "ignore zigbee2mqtt disabled devices\nfix proxmox\nadd proxmox new structure request",
         "de": "ignorieren zickbee2mqt behinderte geräte\nfixer proxmox\nneue strukturanforderung hinzufügen",
@@ -41,58 +93,6 @@
         "pl": "[# 362] (https: / / github.com / iobroker- community- adapters / iBroker.device- watcher / issues / 362): Ecovacs Deebot używa połączenia Uptime dp jako timeselector\nZaktualizowano zależności",
         "uk": "Виправлено [#362](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/products/362): Ecovacs Deebot з'єднання Разовий dp як разселектор\nЗалежність було оновлено",
         "zh-cn": "固定 [362] (https://github.com/iobroctor-community-adapters/ioBroker.device-watcher/issues/362): (中文(简体) ). Ecovacs Deebot 使用连接 时间 dp 作为时间选择器\n依赖关系已更新"
-      },
-      "2.12.1": {
-        "en": "Added: [#341](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/341) Support for Zigbee battery_state datapoint",
-        "de": "Hinzugefügt: [#341](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/341) Unterstützung für Zigbee battery_state Datenpunkt",
-        "ru": "Добавлено: [#341] (https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/341) Поддержка Zigbee Battery_state datapoint",
-        "pt": "Adicionado: [#341](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/341) Suporte para Zigbee battery_state datapoint",
-        "nl": "Toegevoegd: [#341](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/341) Ondersteuning voor Zigbee battery_state datapoint",
-        "fr": "Ajouté : [#341](https://github.com/iobroker-community-adaptateurs/ioBroker.device-watcher/issues/341) Prise en charge du point de données batterie_état de Zigbee",
-        "it": "Aggiunto: [#341](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/341) Supporto per Zigbee Battery_state datapoint",
-        "es": "Añadido: [#341](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/341) Soporte para batería de Zigbee_punto de datos del estado",
-        "pl": "Dodano: [# 341] (https: / / github.com / iobroker- community- adapters / iBroker.device- watcher / issues / 341) Wsparcie dla Bateria Zigbee _ state datapoint",
-        "uk": "Додано: [#341](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/products/341) Підтримка акумулятора Zigbee_state",
-        "zh-cn": "添加:[#341](https://github.com/iobro-communist-community-adapters/ioBroker.device-watcher/issues/341) 互联网档案馆的存檔,存档日期2013-03-02. 支持 Zigbee 电池_状态数据点"
-      },
-      "2.12.0": {
-        "en": "Adapter requires nodeJS >= 18 and js-controller >= 5 now\nAdpter has been migrated to iobroker-community-adapters organisation\nDependencies have been updated",
-        "de": "Adapter benötigt KnotenJS >= 18 und js-controller >= 5 jetzt\nAdpter wurde zu iobroker-community-Adapter Organisation migriert\nAbhängigkeiten wurden aktualisiert",
-        "ru": "Адаптер требует nodeJS >= 18 и js-контроллер >= 5 сейчас\nAdpter был перенесен в организацию iobroker-community-adapters\nЗависимость обновлена",
-        "pt": "Adapter requer nodeJS >= 18 e js-controller >= 5 agora\nAdpter foi migrado para a organização iobroker-community-adapters\nAs dependências foram atualizadas",
-        "nl": "Adapter vereist nodeJS < 18 en js-controller <= Nu 5\nAdpter is gemigreerd naar iobroker-community-adapters organisatie\nAfhankelijkheden zijn bijgewerkt",
-        "fr": "Adaptateur nécessite noeudJS >= 18 et js-controller >= 5 maintenant\nAdpter a été transféré à l'organisation iobroker-community-adapters\nLes dépendances ont été actualisées",
-        "it": "Adattatore richiede nodeJS >= 18 e js-controller >= 5 ora\nAdpter è stato migrato per l'organizzazione di adattatori della comunità\nLe dipendenze sono state aggiornate",
-        "es": "Adaptador requiere nodeJS ю= 18 y js-controller 5 ahora\nAdpter ha sido migrado a la organización de ibroker-community-adapters\nSe han actualizado las dependencias",
-        "pl": "Adapter wymaga nodeJS > = 18 i sterownika js- > = 5 teraz\nAdresat został przeniesiony do organizacji adapterów dla społeczności iobrokerskiej\nZaktualizowano zależności",
-        "uk": "Адаптер вимагає nodeJS >= 18 і js-controller >= 5 тепер\nAdpter був мігрований до організації iobroker-community-adapters\nЗалежність було оновлено",
-        "zh-cn": "适配器需要节点JS QQ 18和js控制器 QQ 现在5号\n接受者已迁移到经济经纪人-社区适应者组织\n依赖关系已更新"
-      },
-      "2.11.0": {
-        "en": "Added [#323](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): Support for Ring Cameras",
-        "de": "Hinzugefügt [#323](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): Unterstützung für Ring Kameras",
-        "ru": "Добавлено [#323] (https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): Поддержка кольцевых камер",
-        "pt": "Adicionado [#323](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): Suporte para câmeras de anel",
-        "nl": "Toegevoegd [#323](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): Ondersteuning voor Ring camera's",
-        "fr": "Ajouté [#323](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): Prise en charge des caméras Ring",
-        "it": "Aggiunto [#323](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): Supporto per telecamere anelli",
-        "es": "[#323](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): Soporte para cámaras de anillo",
-        "pl": "Dodano [# 323] (https: / / github.com / ciddi89 / ioBroker.device- watcher / issues / 323): Wsparcie dla kamer pierścieniowych",
-        "uk": "Додано [#323](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/products/323): Підтримка камери кільця",
-        "zh-cn": "添加 [# 323] (https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/323): 中文(简体) ). 环相机支持"
-      },
-      "2.10.5": {
-        "en": "Fixed [#262](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) & [#292](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292): Phantom Messages",
-        "de": "Behoben [#262](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) & [#292](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292): Phantom-Nachrichten",
-        "ru": "Fixed [#262] (https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) & [#292] (https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292): Фантомные сообщения",
-        "pt": "Corrigido [#262](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) & [#292](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292): Mensagens de Fantasma",
-        "nl": "Vast [#262](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) & [#292](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292): Phantom messages",
-        "fr": "Correction [#262](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) et [#292](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292) : Messages fantômes",
-        "it": "[#262](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) & [#292](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292): Messaggi fantasma",
-        "es": "[#262](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) & [#292](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292): Mensajes Fantasma",
-        "pl": "Fixed [# 262] (https: / / github.com / ciddi89 / ioBroker.device- watcher / issues / 262) & [# 292] (https: / / github.com / ciddi89 / iBroker.device- watcher / issues / 292): Wiadomości Phantom",
-        "uk": "Виправлено [#262](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) & [#292](https://github.com/iobroker-community-adapters/ioBroker.device-watcher/products/292): Повідомлення",
-        "zh-cn": "固定 [262] (https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/262) 和 [292] (https://github.com/iobroker-community-adapters/ioBroker.device-watcher/issues/292): 幽灵消息"
       }
     },
     "titleLang": {
@@ -170,12 +170,12 @@
     },
     "dependencies": [
       {
-        "js-controller": ">=5.0.19"
+        "js-controller": ">=6.0.11"
       }
     ],
     "globalDependencies": [
       {
-        "admin": ">=7.4.10"
+        "admin": ">=7.6.17"
       }
     ],
     "messages": [
@@ -219,8 +219,7 @@
           "cancel"
         ]
       }
-    ],
-    "installedFrom": "iobroker-community-adapters/ioBroker.device-watcher#7a85ba1ebd84e14c25e99023fff9efe6f73913a6"
+    ]
   },
   "native": {
     "checkAdapterInstances": false,
